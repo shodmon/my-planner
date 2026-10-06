@@ -1,0 +1,6 @@
+{"name":"my-planner","version":"0.2.0","description":"Personal planner","author":"My Planner","main":"main.js",
+"scripts":{"start":"electron .","dist":"electron-builder --publish never"},
+"build":{"appId":"com.myplanner.app","productName":"My Planner","files":["main.js","app/**/*"],"directories":{"buildResources":"build"},
+"win":{"target":"nsis"},"nsis":{"oneClick":true,"perMachine":false,"createDesktopShortcut":true},
+"mac":{"target":"dmg","category":"public.app-category.productivity"},"linux":{"target":"AppImage"}},
+"devDependencies":{"electron":"^38.2.0","electron-builder":"^26.0.0"}}
